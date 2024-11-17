@@ -2,7 +2,7 @@ import { Game } from "./components/Game";
 
 function App() {
   return (
-    <div className="">
+    <div className="bg-indigo-950">
       <Game/>
     </div>
   );

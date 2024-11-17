@@ -52,12 +52,12 @@ export const Game = () => {
     }
 
   return (
-    <div className="game">
-      <div className="game-board">
+    <div className="relative min-h-screen">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} calculateWinner={calculateWinner} />
       </div>
-      <div className="game-info">
-        <ol>{moves}</ol>
+      <div className="absolute top-0 right-0 p-4">
+        <ol className="text-teal-500">{moves}</ol>
       </div>
     </div>
   );
